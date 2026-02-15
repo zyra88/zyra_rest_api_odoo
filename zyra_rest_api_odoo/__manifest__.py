@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Zyra REST API Manager",
+    'name': "REST API odoo",
 
     'summary': "Odoo REST API Manager with Auth APIs, API Keys, Rate Limits, and Full CRUD",
 
     'description': """
-        Zyra REST API Manager for Odoo.
+        REST API for Odoo.
         Build secure REST APIs with:
         - Auth APIs: login, register, reset password, user details
         - Model APIs with full CRUD (GET, POST, PUT/PATCH, DELETE)
