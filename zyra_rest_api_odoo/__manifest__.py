@@ -11,7 +11,7 @@
     """,
 
     'author': "Zyra",
-    'website': "https://www.zyra.com",
+    'website': "",
     'support': "zyra88.ae@gmail.com",
     'category': 'Tools',
     'license': 'OPL-1',
