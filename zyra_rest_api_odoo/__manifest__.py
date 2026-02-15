@@ -2,10 +2,11 @@
 {
     'name': "Odoo REST API",
 
-    'summary': "Odoo REST API Manager with Auth APIs, API Keys, Rate Limits, and Full CRUD",
+    'summary': "API, REST API, Odoo REST API, REST API for Odoo with Auth, API Keys, and Full CRUD",
 
     'description': """
-        REST API for Odoo.
+        Odoo REST API.
+        REST API for Odoo with full API management.
         Build secure REST APIs with:
         - Auth APIs: login, register, reset password, user details
         - Model APIs with full CRUD (GET, POST, PUT/PATCH, DELETE)
@@ -13,10 +14,11 @@
         - API key or session based authentication
         - Endpoint-level rate limiting and auth cooldown controls
         - Field selection, domain filtering, and related data support
+        Keywords: API, REST API, Odoo REST API, REST API for Odoo
     """,
 
     'author': "Zyra",
-    'website': "",
+    'website': "https://www.zyra.com",
     'support': "zyra88.ae@gmail.com",
     'category': 'Tools',
     'license': 'OPL-1',
