@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+{
+    'name': "Zyra Rest API Manager",
+
+    'summary': "REST API management with auth, keys, and rate limits",
+
+    'description': """
+        Manage REST endpoints with API keys and rate limiting.
+        Provides login and registration APIs plus model and custom endpoints.
+        Includes UI to enable/disable auth endpoints.
+    """,
+
+    'author': "Zyra",
+    'website': "https://www.zyra.com",
+    'support': "zyra88.ae@gmail.com",
+    'category': 'Tools',
+    'license': 'OPL-1',
+    'currency': 'USD',
+    'price': 50.0,
+    'version': '1.0.0',
+
+    'depends': ['base'],
+
+    'data': [
+        'security/ir.model.access.csv',
+        'data/auth_endpoint_data.xml',
+        'views/app_key_views.xml',
+        'views/auth_endpoint_views.xml',
+        'views/model_endpoint_views.xml',
+        'views/custom_endpoint_views.xml',
+        'views/menu.xml',
+    ],
+    'demo': [
+        'demo/demo.xml',
+    ],
+}
