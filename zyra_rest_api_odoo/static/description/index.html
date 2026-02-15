@@ -10,208 +10,160 @@
         <div class="text-center" style="margin: 2rem 0">
           <span
             class="btn btn-primary"
-            style="
-              border: 1px solid transparent;
-              padding: 0.375rem 0.75rem;
-              font-size: 1rem;
-              line-height: 1.5;
-              border-radius: 0.25rem;
-              background-color: #00a09d;
-              border-color: #00a09d;
-            "
-            ><i class="fa fa-check" style="margin-right: 9px"></i
-            >Enterprise</span
+            style="border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; background-color: #00a09d; border-color: #00a09d"
+            ><i class="fa fa-check" style="margin-right: 9px"></i>Enterprise</span
           >
           <span
             class="btn btn-primary"
-            style="
-              border: 1px solid transparent;
-              padding: 0.375rem 0.75rem;
-              font-size: 1rem;
-              line-height: 1.5;
-              border-radius: 0.25rem;
-              background-color: #00a09d;
-              border-color: #00a09d;
-            "
+            style="border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; background-color: #00a09d; border-color: #00a09d"
             ><i class="fa fa-check" style="margin-right: 9px"></i>Odoo.sh</span
           >
           <span
             class="btn btn-primary"
-            style="
-              border: 1px solid transparent;
-              padding: 0.375rem 0.75rem;
-              font-size: 1rem;
-              line-height: 1.5;
-              border-radius: 0.25rem;
-              background-color: #00a09d;
-              border-color: #00a09d;
-            "
-            ><i class="fa fa-check" style="margin-right: 9px"></i>On
-            Premise</span
+            style="border: 1px solid transparent; padding: 0.375rem 0.75rem; font-size: 1rem; line-height: 1.5; border-radius: 0.25rem; background-color: #00a09d; border-color: #00a09d"
+            ><i class="fa fa-check" style="margin-right: 9px"></i>On Premise</span
           >
         </div>
       </div>
     </section>
 
     <div class="container">
-      <h3 align="center" style="color: #00a09d; font-size: 2em">
-        Zyra Rest API Manager
-      </h3>
+      <h3 align="center" style="color: #00a09d; font-size: 2em">Zyra Rest API Manager</h3>
       <p align="center" style="font-size: 18px; color: #555">
-        Manage REST endpoints in Odoo with API key security, authentication
-        endpoints, and configurable rate limits.
+        Build secure REST APIs from Odoo with API keys, authentication endpoints,
+        model-based dynamic CRUD APIs, custom APIs, and built-in rate limiting.
       </p>
     </div>
 
     <section style="padding-top: 20px">
       <div class="container">
-        <div
-          class="col-md-12 text-center"
-          style="
-            background-color: #00a09d;
-            border-radius: 5px;
-            margin-bottom: 10px;
-          "
-        >
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
           <span style="font-size: 25px; color: #fff"><b>Key Features</b></span>
         </div>
         <ul style="color: #777; font-size: 18px; letter-spacing: 0.3px">
-          <li>Create and manage API application keys from Odoo.</li>
-          <li>Enable/disable built-in authentication endpoints from the UI.</li>
-          <li>Expose model-based endpoints for structured CRUD API access.</li>
-          <li>Create custom endpoints for tailored business integrations.</li>
-          <li>Apply rate limiting rules to protect your APIs.</li>
-          <li>
-            Control endpoint access and API relations from dedicated menus.
-          </li>
+          <li>Create and manage API application keys from Odoo backend.</li>
+          <li>Control built-in authentication endpoints from UI (activate/deactivate).</li>
+          <li>Create model endpoints with selected fields and related model data.</li>
+          <li>Configure custom endpoints for JSON or text responses.</li>
+          <li>Apply endpoint-level rate limits and authentication rules.</li>
+          <li>Use API key or authenticated session to access protected APIs.</li>
         </ul>
       </div>
     </section>
 
     <section style="padding-top: 20px">
       <div class="container">
-        <div
-          class="col-md-12 text-center"
-          style="
-            background-color: #00a09d;
-            border-radius: 5px;
-            margin-bottom: 10px;
-          "
-        >
-          <span style="font-size: 25px; color: #fff"><b>Included APIs</b></span>
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
+          <span style="font-size: 25px; color: #fff"><b>Auth APIs</b></span>
+        </div>
+        <p style="color: #777; font-size: 18px; margin-bottom: 8px">
+          Built-in authentication endpoints (all manageable from Odoo UI):
+        </p>
+        <ul style="color: #777; font-size: 18px; letter-spacing: 0.3px">
+          <li><b>POST /api/login</b>: Login with <code>login</code> and <code>password</code>, returns <code>uid</code> and <code>session_id</code>.</li>
+          <li><b>POST /api/register</b>: Public user registration with <code>name</code>, <code>email</code>, <code>password</code> (optional <code>phone</code>).</li>
+          <li><b>POST /api/password/reset</b>: Trigger reset flow using <code>email</code>.</li>
+          <li><b>GET/POST /api/user/details</b>: Get logged-in user profile, groups, model access, and record rules (requires session).</li>
+        </ul>
+        <p style="color: #777; font-size: 18px; margin-top: 10px">
+          Security controls: failed-attempt window and cooldown support on login/reset endpoints.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding-top: 20px">
+      <div class="container">
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
+          <span style="font-size: 25px; color: #fff"><b>Model API (Full CRUD)</b></span>
+        </div>
+        <p style="color: #777; font-size: 18px">
+          Dynamic model endpoint pattern:
+          <code>/api/model/&lt;model_name&gt;</code>
+          and
+          <code>/api/model/&lt;model_name&gt;/&lt;record_id&gt;</code>
+        </p>
+        <ul style="color: #777; font-size: 18px; letter-spacing: 0.3px">
+          <li><b>GET</b>: list records with pagination (<code>limit</code>, <code>offset</code>, <code>order</code>, optional <code>domain</code>).</li>
+          <li><b>GET by ID</b>: read a single record including configured related data.</li>
+          <li><b>POST</b>: create new record from JSON payload.</li>
+          <li><b>PUT/PATCH</b>: update existing record by ID.</li>
+          <li><b>DELETE</b>: delete record by ID.</li>
+        </ul>
+        <p style="color: #777; font-size: 18px; margin-top: 10px">
+          You can choose allowed fields per model, set endpoint domain filters, and secure each endpoint using API key/session and rate limits.
+        </p>
+      </div>
+    </section>
+
+    <section style="padding-top: 20px">
+      <div class="container">
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
+          <span style="font-size: 25px; color: #fff"><b>Custom API Endpoints</b></span>
         </div>
         <ul style="color: #777; font-size: 18px; letter-spacing: 0.3px">
-          <li>Authentication API endpoints (login/register flow support).</li>
-          <li>Model endpoint management for standard data operations.</li>
-          <li>
-            Custom endpoint management for project-specific API contracts.
-          </li>
+          <li>Route format: <code>/api/custom/&lt;route_key&gt;</code>.</li>
+          <li>Fast custom responses with JSON or plain text response type.</li>
+          <li>Per-endpoint API key/session requirement and per-minute rate limit support.</li>
+          <li>Ideal for lightweight integration callbacks, configs, and public metadata endpoints.</li>
         </ul>
       </div>
     </section>
 
     <section style="padding-top: 20px">
       <div class="container">
-        <div
-          class="col-md-12 text-center"
-          style="
-            background-color: #00a09d;
-            border-radius: 5px;
-            margin-bottom: 10px;
-          "
-        >
-          <span style="font-size: 25px; color: #fff"><b>How It Works</b></span>
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
+          <span style="font-size: 25px; color: #fff"><b>Screenshots</b></span>
         </div>
-        <ol style="color: #777; font-size: 18px; letter-spacing: 0.3px">
-          <li>Install the module and open the Zyra REST API menus.</li>
-          <li>
-            Create API app keys and configure authentication endpoint behavior.
-          </li>
-          <li>
-            Define model or custom endpoints based on your integration needs.
-          </li>
-          <li>
-            Set rate limits and relations, then test your endpoints externally.
-          </li>
-        </ol>
-        <div class="text-center" style="margin-top: 18px">
-          <img
-            src="main_screenshot.png"
-            alt="Zyra Rest API Manager"
-            style="
-              width: 90%;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-              border: 1px solid #ddd;
-            "
-          />
+
+        <div class="text-center" style="font-size: 18px; color: #666; margin-top: 8px">
+          <p>Main module overview</p>
+          <img src="main_screenshot.png" alt="Main Screenshot" style="width: 92%; border: 1px solid #ddd; margin-bottom: 22px" />
+
+          <p>Login API in Postman</p>
+          <img src="postman-login.png" alt="Postman Login" style="width: 92%; border: 1px solid #ddd; margin-bottom: 22px" />
+
+          <p>Register API in Postman</p>
+          <img src="postman-register.png" alt="Postman Register" style="width: 92%; border: 1px solid #ddd; margin-bottom: 22px" />
+
+          <p>User details API response</p>
+          <img src="postman-user-detail.png" alt="Postman User Details" style="width: 92%; border: 1px solid #ddd; margin-bottom: 22px" />
+
+          <p>Model endpoint example (GET products)</p>
+          <img src="postmen-get-products.png" alt="Model Endpoint GET Products" style="width: 92%; border: 1px solid #ddd; margin-bottom: 10px" />
         </div>
       </div>
     </section>
 
     <section style="padding-top: 20px">
       <div class="container">
-        <div
-          class="col-md-12 text-center"
-          style="
-            background-color: #00a09d;
-            border-radius: 5px;
-            margin-bottom: 10px;
-          "
-        >
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
           <span style="font-size: 25px; color: #fff"><b>Version</b></span>
         </div>
         <h5 class="fa fa-rocket">V1.0.0</h5>
         <ul style="color: #777; font-size: 18px; letter-spacing: 0.3px">
-          <li>Initial release of Zyra Rest API Manager.</li>
-          <li>
-            API key management, auth endpoints, model/custom endpoints, and rate
-            limits.
-          </li>
+          <li>Auth API set: login, register, reset password, and user details.</li>
+          <li>Dynamic model API endpoint with full CRUD support.</li>
+          <li>Custom endpoints with JSON/text responses.</li>
+          <li>API key/session authorization and rate limit controls.</li>
         </ul>
       </div>
     </section>
 
     <section style="padding-top: 20px">
       <div class="container">
-        <div
-          class="col-md-12 text-center"
-          style="
-            background-color: #00a09d;
-            border-radius: 5px;
-            margin-bottom: 10px;
-          "
-        >
+        <div class="col-md-12 text-center" style="background-color: #00a09d; border-radius: 5px; margin-bottom: 10px">
           <span style="font-size: 25px; color: #fff"><b>Support</b></span>
         </div>
         <div class="text-center">
           <h4 class="mb-0">
-            <a
-              href="mailto:zyra88.ae@gmail.com"
-              style="
-                text-decoration: none;
-                font-size: 18px;
-                font-weight: 500;
-                letter-spacing: 1px;
-              "
-            >
-              <span
-                class="fa fa-envelope"
-                style="color: #00a09d; padding-right: 10px; font-size: 20px"
-              ></span>
-              Please mail us for support on
-              <b style="color: #3363c1">zyra88.ae@gmail.com</b>
+            <a href="mailto:zyra88.ae@gmail.com" style="text-decoration: none; font-size: 18px; font-weight: 500; letter-spacing: 1px">
+              <span class="fa fa-envelope" style="color: #00a09d; padding-right: 10px; font-size: 20px"></span>
+              Please mail us for support on <b style="color: #3363c1">zyra88.ae@gmail.com</b>
             </a>
           </h4>
           <p style="margin-top: 10px; font-size: 16px">
             Website:
-            <a
-              href="https://www.zyra.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              >https://www.zyra.com</a
-            >
+            <a href="https://www.zyra.com" target="_blank" rel="noopener noreferrer">https://www.zyra.com</a>
           </p>
         </div>
       </div>
