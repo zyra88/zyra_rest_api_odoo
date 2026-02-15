@@ -1,13 +1,18 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Zyra Rest API Manager",
+    'name': "Zyra REST API Manager",
 
-    'summary': "REST API management with auth, keys, and rate limits",
+    'summary': "Odoo REST API Manager with Auth APIs, API Keys, Rate Limits, and Full CRUD",
 
     'description': """
-        Manage REST endpoints with API keys and rate limiting.
-        Provides login and registration APIs plus model and custom endpoints.
-        Includes UI to enable/disable auth endpoints.
+        Zyra REST API Manager for Odoo.
+        Build secure REST APIs with:
+        - Auth APIs: login, register, reset password, user details
+        - Model APIs with full CRUD (GET, POST, PUT/PATCH, DELETE)
+        - Custom APIs with JSON or text responses
+        - API key or session based authentication
+        - Endpoint-level rate limiting and auth cooldown controls
+        - Field selection, domain filtering, and related data support
     """,
 
     'author': "Zyra",
