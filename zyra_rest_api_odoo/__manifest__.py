@@ -18,7 +18,7 @@
     'currency': 'USD',
     'price': 50.0,
     'version': '1.0.0',
-    'images': ['static/description/banner.png'],
+    'images': ['static/description/banner.svg'],
 
     'depends': ['base'],
 
