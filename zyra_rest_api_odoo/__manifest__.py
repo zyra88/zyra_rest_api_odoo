@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "REST API odoo",
+    'name': "Odoo REST API",
 
     'summary': "Odoo REST API Manager with Auth APIs, API Keys, Rate Limits, and Full CRUD",
 
